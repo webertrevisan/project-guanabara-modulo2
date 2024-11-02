@@ -6,8 +6,10 @@
     <title>Fontes em CSS</title>
     
     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         body {
-            font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+            font-family: 'Work Sans', 'Courier New', Courier, monospace, Helvetica, sans-serif;
             /* Medias Absolutas
             cm, mm, in, px, pt, pc
             
@@ -16,8 +18,32 @@
     (Usar somente px e em para font-size)
          (16px geralmente = 1em)
             */
-            font-size: 1em ;
+
+            font-size: 1em;
+
+            /*font-weight: normal; <!--para-negrito-->
+            font-style: normal; <!--Para-Italico-->
+            text-decoration: underline; <!--para-Sublinhado--> */
+
+            /* Lighter normal bold bolder */
         }
+
+h1 {
+    /*Shorthand font
+    font-style => font-weight => font-size => font-family
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+ */
+
+font: italic bolder 3em 'Work Sans', sans-serif;
+}
+
+h2 {
+    font: bold 2em 'Work Sans';
+}
 
 
 
